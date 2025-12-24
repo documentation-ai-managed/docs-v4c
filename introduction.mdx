@@ -1,0 +1,177 @@
+---
+title: Welcome to V4c
+description: Discover V4c, your default documentation space for organizing and managing project documentation efficiently.
+---
+
+## Overview
+
+V4c provides your default documentation space. You organize and manage all project documentation here with ease. Streamline workflows, collaborate with teams, and keep knowledge accessible.
+
+## Key Features
+
+V4c simplifies documentation management. Explore core capabilities below.
+
+<Columns cols={3}>
+
+<Card title="Organized Spaces" icon="layers" href="/spaces">
+
+Create dedicated spaces for projects. Group related docs logically.
+
+</Card>
+
+<Card title="Version Control" icon="git-branch" href="/version-control">
+
+Track changes over time. Roll back edits and maintain history effortlessly.
+
+</Card>
+
+<Card title="Search & Discover" icon="search" href="/search">
+
+Find content instantly. Full-text search across all your documentation.
+
+</Card>
+
+<Card title="Custom Themes" icon="palette" href="/themes">
+
+Personalize appearance. Apply brand colors like `#3B82F6`.
+
+</Card>
+
+</Columns>
+
+## Quick Start
+
+Get started in minutes. Follow these steps to set up your first space.
+
+<Steps>
+
+<Step title="Create Account" icon="user-plus">
+
+Sign up at `https://v4c.example.com/register`. Verify your email.
+
+</Step>
+
+<Step title="New Space" icon="plus">
+
+From dashboard, click "New Space". Name it "Project Docs".
+
+```bash
+# Example CLI setup (optional)
+npx v4c-cli init "Project Docs"
+```
+
+</Step>
+
+<Step title="Add Document" icon="file-plus">
+
+Navigate to your space. Create "introduction.mdx" with frontmatter.
+
+<CodeGroup tabs="MDX,Markdown">
+
+````mdx
+---
+title: My Doc
+description: First document.
+---
+## Hello World
+Content here.
+````
+
+````markdown
+# My Doc (Markdown)
+First document content.
+````
+
+</CodeGroup>
+
+</Step>
+
+<Step title="Publish" icon="globe">
+
+Save and publish. Share link: `https://docs.v4c.example.com/project/introduction`.
+
+</Step>
+
+</Steps>
+
+## Quick Navigation
+
+Access essential sections quickly. Use these guides based on your needs.
+
+<Tabs>
+
+<Tab title="Beginners" icon="book-open">
+
+Start with basics.
+
+<Card title="Quickstart" icon="zap" href="/quickstart">
+
+Set up in 5 minutes.
+
+</Card>
+
+<Card title="Authentication" icon="shield" href="/authentication">
+
+Secure your space.
+
+</Card>
+
+</Tab>
+
+<Tab title="Advanced" icon="settings">
+
+Dive deeper.
+
+<Card title="Configuration" icon="sliders" href="/configuration">
+
+Customize settings.
+
+</Card>
+
+<Card title="Changelog" icon="git-commit" href="/changelog">
+
+Latest updates.
+
+</Card>
+
+</Tab>
+
+</Tabs>
+
+## Brand Guidelines
+
+Follow V4c branding for consistency. Primary color is `#3B82F6`.
+
+<Callout kind="info">
+
+Use `#3B82F6` for headers and accents. Pair with neutrals for readability.
+
+Example CSS:
+
+```css
+:root {
+  --brand-primary: #3B82F6;
+  --brand-text: #1F2937;
+}
+```
+
+</Callout>
+
+<Expandable title="Full Palette" default-open="false">
+
+| Color Name | Hex Code     | Usage                  |
+|------------|--------------|------------------------|
+| Primary    | `#3B82F6`   | Buttons, links         |
+| Secondary  | `#1D4ED8`   | Hover states           |
+| Neutral    | `#6B7280`   | Body text              |
+| Background | `#FFFFFF`   | Main areas             |
+
+Apply in themes via `/themes`.
+
+</Expandable>
+
+<Callout kind="tip">
+
+Ready to build? Head to [Quickstart](/quickstart) next. Organize your first project today.
+
+</Callout>

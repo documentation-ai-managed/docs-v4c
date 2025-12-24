@@ -1,0 +1,136 @@
+---
+title: Getting Started with V4c
+description: Set up your V4c account and create your first documentation space in just a few steps.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have:
+
+<Callout kind="info">
+
+- A modern web browser (Chrome, Firefox, or Safari)
+- An email address for account verification
+- Optional: A GitHub account for importing repositories
+
+</Callout>
+
+No software installation required—V4c runs entirely in your browser.
+
+## Sign Up and Log In
+
+Create your V4c account in under a minute.
+
+<Steps>
+  <Step title="Visit V4c" icon="globe">
+    Open [https://app.v4c.com](https://app.v4c.com) in your browser.
+  </Step>
+  <Step title="Register" icon="user-plus">
+    Click **Sign Up** and enter your email, password, and display name.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for the verification link and click it to activate your account.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to the login page and sign in with your credentials.
+  </Step>
+</Steps>
+
+<Callout kind="success">
+  You'll land on the V4c dashboard, ready to create your first space.
+</Callout>
+
+## Create Your First Documentation Space
+
+Spaces organize your project docs. Follow these steps to set one up.
+
+<Steps>
+  <Step title="New Space" icon="plus">
+    From the dashboard, click **New Space**.
+  </Step>
+  <Step title="Name It" icon="edit-3">
+    Enter a name like `My Project Docs` and select a visibility (Public or Private).
+  </Step>
+  <Step title="Customize" icon="settings">
+    Add a description and choose the brand color `#3B82F6`.
+  </Step>
+  <Step title="Create" icon="check-circle">
+    Click **Create Space**. It appears in your dashboard instantly.
+  </Step>
+</Steps>
+
+## Import Existing Documentation
+
+Bring in your current docs seamlessly. V4c supports multiple import methods.
+
+<Tabs>
+  <Tab title="GitHub Repo" icon="github">
+    Connect your GitHub account and select a repository. V4c pulls Markdown files automatically.
+    
+    <Image
+      src="https://via.placeholder.com/800x400/3B82F6/white?text=GitHub+Import"
+      alt="GitHub repository import screen"
+      width="800"
+      height="400"
+    />
+  </Tab>
+  <Tab title="Local Files" icon="upload">
+    Drag and drop Markdown files or zip archives into the import area.
+    
+````markdown
+```markdown
+# Welcome to My Docs
+
+## Quickstart
+
+Getting started is easy.
+```
+````
+  </Tab>
+  <Tab title="Google Docs" icon="file-text">
+    Paste a shareable Google Docs link. V4c converts it to MDX format.
+  </Tab>
+</Tabs>
+
+## Basic Interface Tour
+
+Familiarize yourself with the V4c editor.
+
+<Columns cols={3}>
+  <Card title="Editor" icon="edit-3" href="#editor">
+    Real-time MDX preview with syntax highlighting.
+  </Card>
+  <Card title="Spaces" icon="folder" href="#spaces">
+    Manage multiple documentation spaces.
+  </Card>
+  <Card title="Publish" icon="globe" href="#publish">
+    One-click deployment to a custom domain.
+  </Card>
+</Columns>
+
+<Expandable title="Advanced Editor Features" default-open="false">
+
+- Live preview updates as you type
+- Component library for rich docs (Steps, Tabs, Cards)
+- Version history and collaboration
+
+</Expandable>
+
+## Next Steps
+
+<Callout kind="tip">
+
+Explore these resources to build powerful docs:
+
+</Callout>
+
+<Columns cols={2}>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your spaces with API keys.
+  </Card>
+  <Card title="Advanced Guides" icon="book-open" href="/guides">
+    Customize themes and workflows.
+  </Card>
+</Columns>
+
+Congratulations—you're ready to document! Your first space is live at `https://your-space.v4c.com`.

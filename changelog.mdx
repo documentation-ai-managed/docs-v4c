@@ -1,0 +1,144 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to V4c, including new features and bug fixes.
+---
+
+## Recent Releases
+
+Stay up to date with V4c's latest enhancements. You can find detailed release notes for each version below, grouped by major updates. Review breaking changes before upgrading to avoid disruptions in your documentation workflows.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement", "bugfix"]}>
+
+## New Features
+
+- Added real-time collaboration for teams, allowing multiple users to edit pages simultaneously with live cursors and conflict resolution.
+- Introduced version history with diff viewer, so you can revert changes or compare edits easily.
+- New integrations with GitHub and Notion for seamless import/export of documentation.
+
+## Improvements
+
+- Enhanced search with fuzzy matching and full-text indexing, improving results by `>40%`.
+- Optimized page load times by lazy-loading images and components.
+
+## Bug Fixes
+
+- Fixed markdown rendering issues with nested lists and tables.
+- Resolved authentication token refresh errors during long sessions.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Custom themes and CSS variables support, using your brand color `#3B82F6`.
+- Embed support for Figma, YouTube, and custom iframes directly in pages.
+
+## Improvements
+
+- Better mobile responsiveness with touch-friendly navigation.
+
+## Bug Fixes
+
+- Corrected export to PDF failures on pages with complex diagrams.
+- Patched cross-site scripting vulnerability in user-generated content.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## Initial Release
+
+- Core documentation editor with MDX support and live preview.
+- User authentication via OAuth and API keys.
+- Basic project organization with folders and permissions.
+
+## Breaking Changes
+
+- Initial schema changes require database migration.
+
+</Update>
+
+## Upgrade Guide
+
+Follow these steps to upgrade V4c safely. Always back up your data first.
+
+<Steps>
+  <Step title="Backup" icon="database">
+
+    Create a full backup of your project data.
+
+````bash
+pg_dump v4c_production > v4c_backup_$(date +%Y%m%d).sql
+````
+
+  </Step>
+  <Step title="Update Package" icon="package">
+
+    <CodeGroup tabs="npm,yarn">
+````bash
+npm install v4c@latest
+````
+````bash
+yarn add v4c@latest
+````
+    </CodeGroup>
+
+  </Step>
+  <Step title="Run Migrations" icon="git-branch">
+
+    Execute database migrations.
+
+````bash
+npx v4c migrate
+````
+
+  </Step>
+  <Step title="Restart Server" icon="refresh-cw">
+
+    Restart your V4c instance and verify functionality.
+
+  </Step>
+</Steps>
+
+## Breaking Changes Summary
+
+<Callout kind="danger">
+
+In v1.2.0 and earlier, API endpoints changed from `/v1/docs` to `/v2/projects`. Update your integrations accordingly. See the [migration guide](https://docs.example.com/migration) for full details.
+
+</Callout>
+
+## Key Enhancements Overview
+
+| Version | Key Features | Impact |
+|---------|--------------|--------|
+| v1.2.0 | Real-time collab, version history | Team productivity `+50%` |
+| v1.1.0 | Custom themes, embeds | Customization flexibility |
+| v1.0.0 | Core editor, auth | Production-ready foundation |
+
+## Future Roadmap
+
+<Columns cols={2}>
+  <Card title="Q4 2024" icon="rocket" horizontal>
+
+    AI-powered content generation and auto-summaries.
+
+  </Card>
+  <Card title="Q1 2025" icon="zap">
+
+    Advanced analytics for page views and engagement.
+
+  </Card>
+  <Card title="Q2 2025" icon="shield">
+
+    Enterprise features like SSO and audit logs.
+
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+
+Subscribe to our [release notifications](https://dashboard.example.com/notifications) to get updates directly. Check the [API changelog](https://docs.example.com/api/changelog) for endpoint-specific changes.
+
+</Callout>
